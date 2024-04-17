@@ -23,6 +23,9 @@ import org.springframework.web.bind.annotation.*;
     {
         System.out.println(product.getName());
         System.out.println(product.getPrice());
+        System.out.println(product.getCategory());
+        System.out.println(product.getDescription());
+        System.out.println(product.getId());
         return "Product Created";
     }
 }
