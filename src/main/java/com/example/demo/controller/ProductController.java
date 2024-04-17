@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.*;
     @PostMapping()
     public String createProduct(@RequestBody Product product)
     {
+        System.out.println(product.getName());
+        System.out.println(product.getPrice());
         return "Product Created";
     }
 }
